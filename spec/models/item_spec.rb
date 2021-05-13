@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 # `name` is not available from within an example (e.g. an `it` block) or fro
