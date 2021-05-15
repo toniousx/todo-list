@@ -3,6 +3,7 @@
 # expose an /auth/login endpoint that accepts user credentials
 # also returns a JSON response with the result.
 class AuthenticationController < ApplicationController
+  skip_before_action :authorize_request, only: :authenticate
   # return auth token once user is authenticated
   def authenticate
     auth_token =
